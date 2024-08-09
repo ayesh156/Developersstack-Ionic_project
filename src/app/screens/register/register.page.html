@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,11 +11,15 @@
       <ion-input type="text"></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label position="floating">Full name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
       <ion-label position="floating">Password</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="full" class="login-button">Login</ion-button>
-    <ion-button expand="full" color="medium" routerLink="/register">Register</ion-button>
+    <ion-button expand="full" color="success" class="register-button">Register</ion-button>
+    <ion-button expand="full" color="medium" routerLink="/login">Login</ion-button>
   </div>
 </ion-content>
