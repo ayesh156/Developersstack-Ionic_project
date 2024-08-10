@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" color="light">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-card routerLink="/products">
+      <img alt="Silhouette of mountains" src="../../../assets/dashboard-img1.jpg" />
+      <ion-card-header>
+        <ion-card-title>Product</ion-card-title>
+        <ion-card-subtitle>Find and buy products</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card routerLink="/location">
+      <img alt="Silhouette of mountains" src="../../../assets/dashboard-img2.jpg" />
+      <ion-card-header>
+        <ion-card-title>My Location</ion-card-title>
+        <ion-card-subtitle>Find your Location</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card routerLink="/orders">
+      <img alt="Silhouette of mountains" src="../../../assets/dashboard-img3.jpg" />
+      <ion-card-header>
+        <ion-card-title>My Orders</ion-card-title>
+        <ion-card-subtitle>Find your orders here</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

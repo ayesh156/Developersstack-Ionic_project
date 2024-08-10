@@ -18,6 +18,26 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./screens/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./screens/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./screens/products/products.module').then( m => m.ProductsPageModule)
+  },
+  {
+    path: 'location',
+    loadChildren: () => import('./screens/location/location.module').then( m => m.LocationPageModule)
+  },
+  {
+    path: 'place-order',
+    loadChildren: () => import('./screens/place-order/place-order.module').then( m => m.PlaceOrderPageModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./screens/orders/orders.module').then( m => m.OrdersPageModule)
   }
 ];
 
