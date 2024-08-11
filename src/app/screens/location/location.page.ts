@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationPage implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  ngAfterViewInit() {
+  }
+
+
+
 
 }

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-button slot="start" color="light">
+    <ion-button slot="start" color="light" routerLink="/login">
       <ion-icon name="arrow-back-outline"></ion-icon>
     </ion-button>
     <ion-title>Register</ion-title>
@@ -12,20 +12,20 @@
     <ion-item>
       <!-- <ion-label position="floating">Username</ion-label>
       <ion-input type="text"></ion-input> -->
-      <ion-input fill="fill" placeholder="Username"></ion-input>
+      <ion-input [(ngModel)]="email" fill="fill" placeholder="Username"></ion-input>
     </ion-item>
     <ion-item>
       <!-- <ion-label position="floating">Full name</ion-label>
       <ion-input type="text"></ion-input> -->
-      <ion-input fill="fill" placeholder="Full name"></ion-input>
+      <ion-input [(ngModel)]="fullName" fill="fill" placeholder="Full name"></ion-input>
     </ion-item>
     <ion-item>
       <!-- <ion-label position="floating">Password</ion-label>
       <ion-input type="password"></ion-input> -->
-      <ion-input fill="fill" placeholder="Password" type="password"></ion-input>
+      <ion-input [(ngModel)]="password" fill="fill" placeholder="Password" type="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="full" color="success" class="register-button" routerLink="/dashboard">Register</ion-button>
+    <ion-button expand="full" color="success" class="register-button" (click)="create()">Register</ion-button>
     <ion-button expand="full" color="medium" routerLink="/login">Already have an Account</ion-button>
   </div>
 </ion-content>
